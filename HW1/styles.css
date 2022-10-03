@@ -1,0 +1,28 @@
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main" "footer";
+  grid-template-rows: 1fr 30px;
+}
+
+main {
+  background-color: white;
+  grid-area: main;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: lightgrey;
+  padding: 5px;
+  grid-area: footer;
+}/*# sourceMappingURL=styles.css.map */
