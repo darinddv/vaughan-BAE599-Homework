@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmnotes App</title>
+</head>
+
+<body>
+    <h1>Field {{ field.id }} Observations</h1>
+    {% if latest_fields %}
+        <ul>
+        {% for field in latest_fields %}
+            <li><a href="/farmnotes/{{ field.id }}/{{ observation.id }}/}">{{ observation.observation_title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No fields are available.</p>
+    {% endif %}
+</body>
+</html>
